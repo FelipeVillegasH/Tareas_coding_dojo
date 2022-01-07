@@ -1,0 +1,17 @@
+# P*((r*(1+r)**n)/((1+r)**n-1))
+P=400000
+r=(0.03/12)
+n=360
+print(P)
+print(r)
+print(n)
+x=round(P*((r*(1+r)**n)/((1+r)**n-1)),2) 
+print("la respuesta es", x)
+help(round)
+# la funcion round devuelve valores numericos para futuros calculos 
+help(format)
+format(x, "0.1f")
+type(format(x, "0.1f"))
+# format por otro lado imprime en formato string y el numero de caracteres se expresa en fraccion de 1 
+# por lo que al querer representar 1 decimal utilizamos el 0.1 en lugar del 1
+# en otras palabras el 0 representa el entero 
